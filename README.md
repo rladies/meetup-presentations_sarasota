@@ -13,4 +13,4 @@ E-mail: sarasota [at] rladies [dot] org
 ## Upcoming meetups
 
 
-January 8 - Inagural Meeting : https://www.meetup.com/rladies-sarasota/events/245727687/
+January 8 -[Presentation pdf format](https://github.com/rladies/meetup-presentations_sarasota/blob/master/2018_01_08_inaugural/Inaugural%20Meetup%20Presentation.pdf)
