@@ -1,0 +1,76 @@
+country,mortality_rate,ownership_rate,hdi,hdi_category
+Argentina,5.65,10.2,0.797,very high
+Australia,1.05,15,0.929,very high
+Austria,2.94,30.4,0.885,very high
+Azerbaijan,0.07,3.5,0.731,high
+Barbados,3,7.8,0.793,very high
+Belarus,0.38,7.3,0.756,high
+Belgium,2.43,17.2,0.886,very high
+Brazil,19.01,8,0.718,high
+Bulgaria,1.35,6.2,0.771,high
+Canada,4.78,30.8,0.908,very high
+Chile,0.06,10.7,0.805,very high
+Colombia,28.11,5.9,0.71,high
+Costa Rica,3.32,9.9,NA,NA
+Croatia,3.01,21.7,0.796,very high
+Cyprus,0.83,36.4,0.84,very high
+Czech Republic,1.76,16.3,0.865,very high
+Denmark,1.45,12,0.895,very high
+El Salvador,50.36,5.8,NA,NA
+Estonia,2.54,9.2,0.835,very high
+Finland,3.64,32,0.882,very high
+France,3,31.2,0.884,very high
+Georgia,1.54,7.3,0.733,high
+Germany,1.1,30.3,0.905,very high
+Greece,1.5,22.5,0.861,very high
+Guatemala,38.52,13.1,0.574,medium
+Honduras,46.7,6.2,0.625,medium
+Hong Kong,0.19,NA,NA,NA
+Hungary,0.85,5.5,0.816,very high
+Iceland,1.25,30.3,0.898,very high
+India,0.93,4.2,0.547,medium
+Ireland,1.03,8.6,0.908,very high
+Israel,1.86,7.3,0.888,very high
+Italy,1.28,11.9,0.874,very high
+Jamaica,47.44,8.1,0.727,high
+Japan,0.07,0.6,0.901,very high
+Kuwait,1.25,24.8,0.76,high
+Kyrgyzstan,1.01,0.9,0.615,medium
+Latvia,1.43,19,0.805,very high
+Lithuania,1.61,0.7,0.81,very high
+Luxembourg,1.81,15.3,0.867,very high
+Malta,2.16,11.9,0.832,very high
+Mauritius,0.19,14.7,0.728,high
+Mexico,11.14,15,0.77,high
+Moldova,1.04,7.1,0.649,medium
+Montenegro,8.55,23.1,0.771,high
+Netherlands,0.46,3.9,0.91,very high
+New Zealand,2.66,22.6,0.908,very high
+Nicaragua,7.14,7.7,0.589,medium
+Norway,1.78,31.3,0.943,very high
+Panama,12.92,21.7,0.768,high
+Paraguay,7.35,17,0.665,medium
+Peru,1.87,18.8,0.725,high
+Philippines,9.46,4.7,0.644,medium
+Poland,0.26,1.3,0.813,very high
+Portugal,1.77,8.5,0.809,very high
+Qatar,0.18,19.2,0.831,very high
+Republic of Macedonia,1.04,NA,NA,NA
+Romania,0.2,0.7,0.781,high
+Serbia,3.9,58.2,0.766,high
+Singapore,0.24,0.5,0.866,very high
+Slovakia,1.75,8.3,0.834,very high
+Slovenia,2.44,13.5,0.884,very high
+South Africa,9.41,12.7,NA,NA
+South Korea,0.13,1.1,0.897,very high
+Spain,0.63,10.4,0.878,very high
+Swaziland,37.16,6.4,0.522,medium
+Sweden,1.47,31.6,0.904,very high
+Switzerland,3.5,45.7,0.903,very high
+Taiwan,0.42,4.6,NA,NA
+Ukraine,0.35,6.6,0.729,high
+United Kingdom,0.25,6.2,0.863,very high
+United States,9,88.8,0.91,very high
+Uruguay,3.24,31.8,0.783,high
+Uzbekistan,0.68,1.5,0.641,medium
+Zimbabwe,4.75,4.6,0.376,low
