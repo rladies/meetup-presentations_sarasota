@@ -1,0 +1,89 @@
+intro_r
+========================================================
+author: Mine Dogucu and Catherine Holloway
+date: January 29th, 2018
+autosize: true
+% this presentation needs the magick package
+
+
+Interface
+========================================================
+
+```{r echo=FALSE}
+library(magick)
+interface_screenshot <- image_read("screenshots/interface.png")
+interface <- image_annotate(interface_screenshot, "console", size = 70, gravity = "southwest", color = "green")
+interface <- image_annotate(interface, "script", size = 70, gravity = "northwest", color = "green")
+interface <- image_annotate(interface, "files, packages, plots", size = 70, gravity = "southeast", color = "green")
+interface <- image_annotate(interface, "environment, history, preview", size = 70, gravity = "northeast", color = "green")
+image_write(interface, path = "screenshots/interface_annotated.png", format = "png")
+```
+
+![annotated screenshot of the interface](screenshots/interface_annotated.png)
+
+Console - Lower Left Corner
+===========================
+
+![console screenshot](screenshots/console.png)
+
+Files - Lower Right Corner
+===========================
+
+![files screenshot](screenshots/files.png)
+
+Packages - Lower Right Corner
+===========================
+
+![packages screenshot](screenshots/tidyverse_packages.png)
+
+
+Object Assignment
+========================================================
+
+```{r}
+my_word <- "hello everyone"
+a <- 2
+b <- 3
+c <- a+b
+c
+```
+
+Opening datasets
+========================================================
+
+```{r}
+library(readr)
+nc <- read_csv("C:/Users/milan/r_projects/meetup-presentations_sarasota/2018_01_29_intro_R/nc.csv")
+print(nc)
+```
+
+Summarizing datasets : str()
+========================================================
+
+```{r}
+str(nc)
+```
+
+
+Summarizing datasets : head()
+========================================================
+
+```{r}
+head(nc)
+```
+
+
+Summarizing datasets : tail()
+========================================================
+
+```{r}
+tail(nc)
+```
+
+
+Descriptive Statisitics
+========================================================
+
+```{r}
+summary(nc)
+```
