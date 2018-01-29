@@ -5,7 +5,7 @@ date: "January 29, 2018"
 output: ioslides_presentation
 ---
 
-##Projects
+## Projects
 
 + Make a folder on your computer and name it R Ladies.
 + File > New Project > New Directory > New Project
@@ -13,7 +13,7 @@ Write Introduction to R as Directory Name and Browse to select the R Ladies fold
 + File > New Script
 
 
-##Opening Datasets
+## Opening Datasets
 
 Download __North Carolina Births__ and __Gun Violence__ datasets from
 
@@ -22,7 +22,7 @@ https://www.openintro.org/stat/data/
 
 Save these datasets in your Introduction to R folder. 
 
-##Opening Datasets
+## Opening Datasets
 
 ```{r echo=FALSE}
 
@@ -36,87 +36,87 @@ nc <- read.csv("Introduction to R/nc.csv")
 print(nc)
 ```
 
-##Summarizing datasets : str()
+## Summarizing datasets : str()
 
 ```{r}
 str(nc)
 ```
 
 
-##Summarizing datasets : head()
+## Summarizing datasets : head()
 
 ```{r}
 head(nc)
 ```
 
 
-##Summarizing datasets : tail()
+## Summarizing datasets : tail()
 
 ```{r}
 tail(nc)
 ```
 
 
-##Descriptive Statisitics
+## Descriptive Statisitics
 
 ```{r}
 summary(nc)
 ```
 
 
-##Selecting Variables
+## Selecting Variables
 
 ```{r}
 mean(nc$mage)
 ```
 
-##Arguments
+## Arguments
 
 Can you find mean age of fathers?
 
-##Arguments
+## Arguments
 
 ```{r}
 mean(nc$fage)
 ```
 
-##Arguments
+## Arguments
 
 ```{r}
 mean(nc$fage, na.rm=FALSE)
 ```
 
-##Using R help
+## Using R help
 
 Let's assume we are interested interested in making a scatterplot to show the relationship between _mother's age and _mage_ and _weeks_ and we do not know how to do this yet. 
 
 
-##Using R help
+## Using R help
 ```{r eval=FALSE}
 ?plot
 ```
 
 
-##Using R help
+## Using R help
 
 ```{r}
 plot(nc$mage, nc$weeks)
 ```
 
-##Using R help
+## Using R help
 
 ```{r}
 plot(nc$mage, nc$weeks, xlab="Mother's age", ylab="Weeks")
 ```
 
 
-##Practice
+## Practice
 
 + Open _gun_violence_ dataset and name your object _gun_
 + Look at the head and tail of the dataset as well as the summary
 + Make a plot to look at the relationship betwen _mortality_rate_, _ownership_rate_ 
 
-##Practice 
+## Practice 
 
 ```{r echo=FALSE}
 gun<-read.csv("gun_violence.csv")
@@ -132,7 +132,7 @@ text(gun$ownership_rate,gun$mortality_rate,
 ```
 
 
-##Practice
+## Practice
 
 ```{r}
 plot(gun$ownership_rate, gun$mortality_rate, 
