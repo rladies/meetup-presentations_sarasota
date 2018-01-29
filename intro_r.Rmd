@@ -1,0 +1,21 @@
+---
+title: "Introduction to R"
+author: "Catherine Holloway and Mine Dogucu"
+date: "January 30, 2018"
+output: ioslides_presentation
+---
+
+## Interface
+
+```{r echo=FALSE}
+library(magick)
+interface_screenshot <- image_read("screenshots/interface.png")
+interface <- image_annotate(interface_screenshot, "console", size = 70, gravity = "southwest", color = "green")
+interface <- image_annotate(interface, "script", size = 70, gravity = "northwest", color = "green")
+interface <- image_annotate(interface, "files, packages, plots", size = 70, gravity = "southeast", color = "green")
+interface <- image_annotate(interface, "environment, history, preview", size = 70, gravity = "northeast", color = "green")
+image_write(interface, path = "screenshots/interface_annotated.png", format = "png")
+```
+
+![annotated screenshot of the interface](screenshots/interface_annotated.png)
+
