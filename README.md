@@ -19,4 +19,4 @@ January 29 Introduction to R- [Presentation](https://github.com/rladies/meetup-p
 
 March 18 Data Wrangling in R - [Presentation](https://github.com/melcrow/RLadies/blob/master/Data_Wrangling.md)
 
-March 26 - Data Visualization using ggplot2
+March 26 - Data Visualization using ggplot2 - [Presentation](https://github.com/rladies/meetup-presentations_sarasota/blob/master/2018_03_26_Data_Viz_ggplot2/Data_Viz.pdf)
