@@ -1,0 +1,328 @@
+---
+title: "Data Visualization with ggplot2"
+subtitle: R-Ladies Sarasota
+author: "Mine Dogucu"
+date: "March 26, 2018"
+output: ioslides_presentation
+---
+
+## Setup
+
+```{r message=FALSE, warning=FALSE}
+library(tidyverse)
+nc<-read_csv("nc.csv")
+nc<-drop_na(nc)
+
+```
+
+# One Categorical Variable
+
+## Plot 1
+
+What kind of a graph is this?
+
+```{r echo=FALSE}
+ggplot(nc, aes(marital))+geom_bar()
+```
+
+## Step by Step Barplot 
+
+```{r }
+ggplot(nc)
+```
+
+## Step by Step Barplot 
+
+```{r }
+ggplot(nc,aes(x=marital))
+```
+
+## Step by Step Barplot 
+
+```{r }
+ggplot(nc)
+```
+
+## Step by Step Barplot 
+
+```{r }
+ggplot(nc, aes(x=marital))
+```
+
+## Step by Step Barplot 
+
+```{r }
+ggplot(nc,aes(x=marital))+
+  geom_bar()
+```
+
+# Two Categorical Variables 
+
+## Step by Step Barplot
+
+```{r }
+ggplot(nc,aes(x=marital, fill=whitemom))+
+  geom_bar()
+```
+
+## Practice
+
+```{r echo=FALSE}
+ggplot(nc,aes(x=lowbirthweight, fill=premie))+
+  geom_bar()
+```
+
+## Practice
+
+```{r}
+ggplot(nc,aes(x=lowbirthweight, fill=premie))+
+  geom_bar()
+```
+
+# One Continuous Variable
+
+## Plot 2
+
+```{r echo=FALSE}
+ggplot(nc,aes(x=weight))+
+  geom_histogram(binwidth=1,        aes(fill=I('indianred2'),color=I('midnightblue')))
+  
+```
+
+## Step by Step Histogram
+
+```{r }
+ggplot(nc)
+  
+```
+
+## Step by Step Histogram
+
+```{r }
+ggplot(nc,aes(x=weight))
+  
+```
+
+## Step by Step Histogram
+
+
+```{r }
+ggplot(nc,aes(x=weight))+
+  geom_histogram()        
+```
+
+## Step by Step Histogram
+
+```{r }
+ggplot(nc,aes(x=weight))+
+  geom_histogram(binwidth=1)
+  
+```
+
+## Step by Step Histogram
+
+```{r}
+ggplot(nc,aes(x=weight))+
+  geom_histogram(binwidth=1, aes())
+  
+```
+
+## Step by Step Histogram
+
+```{r}
+ggplot(nc,aes(x=weight))+
+  geom_histogram(binwidth=1, aes(fill=I('red')))
+  
+```
+
+
+## Step by Step Histogram
+
+```{r }
+ggplot(nc,aes(x=weight))+
+  geom_histogram(binwidth=1, aes(fill=I('indianred2')))
+  
+```
+
+## Step by Step Histogram
+
+```{r }
+ggplot(nc,aes(x=weight))+
+  geom_histogram(binwidth=1, 
+                 aes(fill=I('indianred2')))
+  
+```
+
+## Step by Step Histogram
+
+```{r}
+ggplot(nc,aes(x=weight))+
+  geom_histogram(binwidth=1, 
+                 aes(fill=I('indianred2'),
+                     color=I('midnightblue')))
+  
+```
+
+
+## Plot 3
+
+What kind of a plot is this?
+
+```{r echo=FALSE}
+ggplot(nc,aes(x=weight, fill=habit))+
+  geom_dotplot(binwidth = 0.14)
+```
+
+## Step by Step dotplots
+
+```{r}
+ggplot(nc)
+```
+
+## Step by Step dotplots
+
+```{r}
+ggplot(nc,aes(x=weight))
+```
+
+## Step by Step dotplots
+
+```{r}
+ggplot(nc,aes(x=weight))+
+  geom_dotplot()
+```
+
+## Step by Step Dotplots
+
+```{r}
+ggplot(nc,aes(x=weight))+
+  geom_dotplot(binwidth = 0.14)
+```
+
+## Step by Step Dotplots
+
+```{r}
+ggplot(nc,aes(x=weight, fill=habit))+
+  geom_dotplot(binwidth = 0.13)
+```
+
+# One Continuous One Categorical Variable
+
+## Plot 4
+
+What kind of a plot is this?
+
+```{r echo=FALSE}
+ggplot(nc,aes(x=habit,y=weight))+
+  geom_boxplot(aes(fill=I('chartreuse'),
+                   color=I('lightslateblue')))
+```
+
+## Step by Step Boxplots
+
+```{r}
+ggplot(nc)
+
+```
+
+## Step by Step Boxplots
+
+```{r}
+ggplot(nc,aes(x=habit,y=weight))
+```
+
+## Step by Step Boxplots
+
+```{r}
+ggplot(nc,aes(x=habit,y=weight))+
+  geom_boxplot()
+```
+
+## Step by Step Boxplots
+
+```{r}
+ggplot(nc,aes(x=habit,y=weight))+
+  geom_boxplot(aes())
+```
+
+## Step by Step Boxplots
+
+```{r}
+ggplot(nc,aes(x=habit,y=weight))+
+  geom_boxplot(aes(fill=I('chartreuse')))
+```
+
+## Step by Step Boxplots
+
+```{r}
+ggplot(nc,aes(x=habit,y=weight))+
+  geom_boxplot(aes(fill=I('chartreuse'),
+                   color=I('lightslateblue')))
+```
+
+# Two Continuous Variables 
+
+## Plot 5
+
+```{r echo=FALSE}
+ggplot(nc, aes(x=gained, y=weight))+
+  geom_point(shape=17)+
+  facet_grid(habit~premie)
+```
+
+## Step by Step Scatterplots
+
+```{r}
+ggplot(nc)
+```
+
+## Step by Step Scatterplots
+
+```{r}
+ggplot(nc, aes(x=gained, y=weight))
+```
+
+## Step by Step Scatterplots
+
+```{r}
+ggplot(nc, aes(x=gained, y=weight))+
+  geom_point()
+```
+
+## Step by Step Scatterplots
+
+```{r}
+ggplot(nc, aes(x=gained, y=weight))+
+  geom_point(shape=17)
+```
+
+## Step by Step Scatterplots
+
+```{r}
+ggplot(nc, aes(x=gained, y=weight))+
+  geom_point(shape=17)+
+  facet_grid(habit~premie)
+```
+
+
+
+## Saving Plots
+
+One way:
+
+Plots> Export > Save as Image 
+
++ Select the directory you would like to save (ideal to save under figs).
++ Name the file to save.
++ Click Save
+
+## Saving Plots
+
+The other way:
+
+```{r message=FALSE}
+ggsave("myplot.png")
+```
+
+
+
