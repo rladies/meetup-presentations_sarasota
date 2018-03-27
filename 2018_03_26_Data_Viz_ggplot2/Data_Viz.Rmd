@@ -3,7 +3,7 @@ title: "Data Visualization with ggplot2"
 subtitle: R-Ladies Sarasota
 author: "Mine Dogucu"
 date: "March 26, 2018"
-output: ioslides_presentation
+output: pdf_document
 ---
 
 ## Setup
